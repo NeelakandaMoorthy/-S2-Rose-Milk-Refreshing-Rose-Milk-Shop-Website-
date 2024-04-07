@@ -1,0 +1,414 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Global styles */
+body {
+    font-family: "Poppins", sans-serif;
+    cursor:url('logo.png');
+}
+.container2 {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+/* Header styles */
+.header {
+    background-color:#ff69b4; /* Bright background color */
+    padding: 20px 0;
+}
+
+.logo h1 {
+    color: #fff; /* White color for text */
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.logo p {
+    color: #f8f9fa; /* Light color for additional text */
+    font-size: 14px;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #f8f9fa; /* White color for text */
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #f8f9fa; /* Lighter color on hover */
+    background-color: #e6005c;
+    border-radius: 4px;
+    transition:ease-in 1.9s ease-in-out; 
+    padding: 8px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        margin-top: 20px;
+    }
+}
+
+/* hero Section  */
+.hero {
+    background-image: url('background.jpg'); /* Replace with your hero background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0; /* Adjust padding as needed */
+    text-align: center;
+}
+
+.hero-heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-subheading {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.hero-btn {
+    background-color: #ff3366; /* Pink color for button */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #e6005c; /* Lighter pink color on hover */
+}
+/* hero Section  */
+
+
+
+/* about us section  */
+
+/* About Us section styles */
+.about-section {
+    background-color: #fff; /* White background */
+    padding: 80px 0; /* Adjust padding as needed */
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 30px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.section-heading {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* about us section  */
+
+
+
+/* menu section  */
+/* Menu section styles */
+.menu-section {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 80px 0; /* Adjust padding as needed */
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    max-width: 300px;
+    margin: 0 20px 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.menu-item-name {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.menu-item-description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.menu-item-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ff3366; /* Pink color for price */
+}
+
+/* menu section  */
+
+
+/* testimonials-section*/
+/* Testimonials section styles */
+.testimonials-section {
+    background-color: #fff; /* White background */
+    padding: 80px 0; /* Adjust padding as needed */
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    max-width: 400px;
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.testimonial:hover{
+    background-color: #ff3366;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+
+}
+.testimonial-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    font-size: 14px;
+    color: #888; /* Gray color for author */
+}
+
+/* testimonials-section*/
+
+
+/* Location section */
+/* Locations section styles */
+.locations-section {
+    background-color: rgb(248, 169, 183); /* Light gray background */
+    padding: 80px 0; /* Adjust padding as needed */
+}
+
+.locations {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.location {
+    max-width: 300px;
+    margin: 0 20px;
+    padding: 20px;
+    background-color: #ff3366; /* White background */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  
+}
+.location:hover{
+    background-color: #ccc;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.location-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.location-address {
+    font-size: 16px;
+    color: #fff; /* Gray color for address */
+}
+
+/* Location section */
+
+/* contact us section  */
+/* Contact section styles */
+.contact-section {
+    background-color: #fff; /* White background */
+    padding: 80px 0; /* Adjust padding as needed */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #ff3366; /* Pink border on focus */
+}
+
+.contact-form textarea {
+    height: 150px; /* Adjust height as needed */
+}
+
+.contact-form button {
+    background-color: #ff3366; /* Pink color for button */
+    color: #fff; /* White color for button text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e6005c; /* Lighter pink color on hover */
+}
+
+.contact-info {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* contact us section  */
+
+
+
+
+/* footer section */
+/* Footer section styles */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 40px 0; /* Adjust padding as needed */
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-links ul li a {
+    color: #fff; /* White color for links */
+    text-decoration: none;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-link {
+    color: #e6005c; /* White color for social media links */
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.social-link:last-child {
+    margin-right: 0;
+}
+
+.copyright {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* footer section */
+
+
+
+
+
+
